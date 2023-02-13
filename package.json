@@ -19,7 +19,8 @@
     "format-check": "prettier --check \"{,!(node_modules)/**/}*.{js,ts}\"",
     "build": "rm -rf built && tsc",
     "prepublishOnly": "npm run build",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
